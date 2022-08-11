@@ -1,0 +1,85 @@
+* {
+  font-family: "Edu QLD Beginner", cursive;
+}
+body {
+  background: url("/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.personal__info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__title {
+  font-size: 2rem;
+  color: blue;
+}
+.input__title:hover {
+  color: red;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+button:hover {
+  background-color: rgb(48, 99, 48);
+  cursor: pointer;
+}
+
+.input__container__design {
+  background-color: transparent;
+  position: relative;
+}
+
+.show__password {
+  margin-top: 1rem;
+}
+
+.label__design {
+  transition: all 0.2s;
+  position: absolute;
+  left: 13px;
+  bottom: 10px;
+  color: #a79a9a;
+}
+.input__design {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(66, 66, 66);
+  padding: 2rem 3rem 0.5rem 0.8rem;
+}
+.input__design:hover {
+  border-color: black;
+  background-color: #ebe1e1;
+}
+.input__design:focus {
+  background-color: #e2dada;
+  border-color: purple;
+}
+
+.input__design:focus + .label__design,
+.input__design:valid + .label__design {
+  display: inline;
+  transform: scaleY(0.8);
+  transform: translate(-3px, -25px);
+  color: purple;
+  transition: all 0.2s;
+}
